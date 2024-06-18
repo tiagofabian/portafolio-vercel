@@ -1,0 +1,132 @@
+.certs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certs-title {
+    width: 100%;
+    margin: 0;
+    color: #606060;
+    position: relative;
+}
+
+.certs-section {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.certs-card {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #7a7a7a;
+    flex-grow: 1;
+    flex-shrink: 1;
+    transition: all .5s ease;
+    box-sizing: border-box;
+}
+
+.certs-card > button {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.certs-card > button > img {
+    display: block;
+    object-fit: cover;
+    line-height: 0;
+    height: 115%;
+    width: 115%;
+    cursor: pointer;
+    box-sizing: border-box;
+    filter: brightness(0.95);
+    transition: filter .5s ease;
+}
+
+.certs-card:hover {
+    width: 10%;
+    border: 1px solid #c7c7c777;
+}
+.certs-card:hover > button > img {
+    filter: brightness(0.98);
+}
+
+@media screen and (max-width: 719px) {
+    .certs-container {
+        padding: 8% 5% 5.5% 5%;
+        gap: 8vw;
+    }
+    
+    .certs-title {
+        font-size: calc(16px + 1vw);
+        text-align: center;
+        right: 0;
+    }
+    
+    .certs-section {
+        flex-wrap: wrap;
+        gap: 3vw;
+    }
+    
+    .certs-card {
+        flex-basis: calc((100% - (3vw * (2 - 1))) / 2);
+        max-width: calc((100% - (3vw * (2 - 1))) / 2);
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    .certs-container {
+        padding: 5% 5.5% 3.5% 5%;
+        gap: 2.3vw;
+    }
+
+    .certs-title {
+        font-size: calc(15px + 0.5vw);
+        text-align: left;
+        right: 0.8%;
+    }
+
+    .certs-section {
+        flex-wrap: nowrap;
+    }
+
+    .certs-card {
+        width: 0;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .certs-container {
+        padding: 5% 5.5% 3.5% 5%;
+        gap: 2.3vw;
+    }
+
+    .certs-title {
+        font-size: calc(15px + 0.5vw);
+        text-align: left;
+        right: 0.8%;
+    }
+
+    .certs-section {
+        flex-wrap: nowrap;
+    }
+
+    .certs-card {
+        width: 0;
+        height: 300px;
+    }
+}
