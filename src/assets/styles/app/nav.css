@@ -1,0 +1,347 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.nav-presentation {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-presentation-title {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    color: #f3f5f5;
+    box-sizing: border-box;
+}
+
+.nav-presentation > img {
+    display: block;
+    line-height: 0;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.nav-presentation-title > h1 {
+    margin: 0;
+    line-height: 120%;
+}
+
+.nav-presentation-title h1 > #cyan {
+    color: #3eb9e2;
+}
+
+.nav-presentation-title > h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.nav-presentation-title > p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.nav-btn-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.nav-list {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    display: inline-flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6f6f69b;
+    width: max-content;
+    height: fit-content;
+    min-width: 30%;
+    border-radius: 2vw;
+    list-style-type: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: #5a6163ef;
+    text-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 100%;
+    padding: 0.5vw 2vw;
+    text-decoration: none;
+    line-height: 180%;
+    color: #3eb9e2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: color 0.5s ease;
+}
+
+.nav-item:hover {
+    background-color: #5a6163a4;
+    transform: scale(1.1);
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #ece6e65f;
+}
+
+.nav-item:hover .nav-link {
+    color: #d8d5d5fb
+}
+
+.nav-item:active {
+    background-color: #4d85b0;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 719.9px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0;
+        border: 1px solid #ababab;
+        width: 100%;
+        margin: 0;
+        box-shadow: 2px 2px 7px #00000080;
+        background: url("../../img/svg/bannerazul4k-v3.4-mob.svg");
+        aspect-ratio: 3 / 2;
+        background-size: 100% 100%;
+        padding: 5vw 4vw;
+    }
+
+    .nav-container {
+        border-radius: 0;
+        padding: 1% 1%;
+    }
+
+    .nav-presentation {
+        justify-content: space-evenly;
+        gap: 3vw;
+    }
+
+    .nav-presentation-title {
+        width: 60%;
+    }
+
+    .nav-presentation > img {
+        width: 38%;
+        height: fit-content;
+    }
+
+    .nav-presentation-title br {display: none;}
+
+    .nav-presentation-title > h1 {
+        font-size: calc(5px + 4.5vw);
+    }
+    
+    .nav-presentation-title > h4 {
+        font-size: calc(1px + 3vw);
+        margin-bottom: 2.5%;
+    }
+    
+    .nav-presentation-title > p {
+        font-size: calc(0.1px + 2.1vw);
+    }
+
+    .nav-btn-section {
+        width: 100%;
+        height: max-content;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        min-width: 80%;
+        gap: 25vw;
+        height: max-content;
+        width: 100%;
+    }
+
+    .nav-item {
+        min-width: 22vw;
+        max-width: 22vw;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: calc(4px + 3vw);
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    nav {
+        flex-direction: row;
+        border-radius: 5px;
+        border: 1px solid #ababab;
+        width: 99.2%;
+        margin: 0;
+        box-shadow: 3px 3px 8px #00000080;
+        margin-right: 0.4%;
+        margin-left: 0.4%;
+        margin-top: 0.4%;
+        background: url("../../img/svg/bannerazul4k-v3.svg");
+        background-size: cover;
+        aspect-ratio: 3.34 / 1;
+        padding: 4vw 3vw;
+    }
+
+    .nav-presentation {
+        display: inline-flex;
+        flex-direction: row;
+        gap: 2vw;
+        width: fit-content;
+    }
+
+    .nav-presentation-title {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        color: #f3f5f5;
+        box-sizing: border-box;
+    }
+
+    .nav-presentation > img {
+        width: calc(11em + 0.75vw);
+        height: calc(11em + 0.75vw);
+    }
+
+    .nav-presentation-title > h1 {
+        font-size: calc(36px + 0.75vw);
+    }
+
+    .nav-presentation-title > h1 > br {
+        display: none;
+    }
+    
+    .nav-presentation-title > h4 {
+        font-size: calc(13px + 0.75vw);
+        margin-bottom: 2.5%;
+    }
+    
+    .nav-presentation-title > p {
+        font-size: calc(7px + 0.75vw);
+    }
+
+    .nav-btn-section {
+        width: max-content;
+        height: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 3.5vw;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-item {
+        min-width: 12vw;
+    }
+
+    .nav-link {
+        font-size: calc(18px + 0.5vw);
+        min-width: 11vw;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    nav {
+        flex-direction: row;
+        border-radius: 5px;
+        border: 1px solid #ababab;
+        width: 99.2%;
+        margin: 0;
+        box-shadow: 3px 3px 8px #00000080;
+        margin-right: 0.4%;
+        margin-left: 0.4%;
+        margin-top: 0.4%;
+        background: url("../../img/svg/bannerazul4k-v3.svg");
+        background-size: cover;
+        aspect-ratio: 3.34 / 1;
+        padding: 4vw 3vw;
+    }
+
+    .nav-presentation {
+        display: inline-flex;
+        flex-direction: row;
+        gap: 2vw;
+        width: fit-content;
+    }
+
+    .nav-presentation-title {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        color: #f3f5f5;
+        box-sizing: border-box;
+    }
+
+    .nav-presentation > img {
+        width: calc(200px + 5vw);
+        height: calc(200px + 5vw);
+    }
+
+    .nav-presentation-title > h1 {
+        font-size: calc(54px + 0.5vw);
+    }
+    
+    .nav-presentation-title > h4 {
+        font-size: calc(13px + 0.5vw);
+        margin-bottom: 2.5%;
+    }
+    
+    .nav-presentation-title > p {
+        font-size: calc(7px + 0.5vw);
+    }
+
+    .nav-btn-section {
+        width: max-content;
+        height: 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 3.5vw;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-item {
+        min-width: 10vw;
+    }
+
+    .nav-link {
+        font-size: calc(18px + 0.5vw);
+        width: 100%;
+        min-width: 10vw;
+    }
+}
+
